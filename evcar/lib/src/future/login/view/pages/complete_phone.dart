@@ -1,10 +1,10 @@
-import 'package:evcar/src/future/login/view/pages/login_page.dart';
-import 'package:evcar/src/future/opening_screen/view/pages/opening_page.dart';
+import 'package:evcar/src/future/login/view/widget/complete_phone_widget.dart';
+import 'package:evcar/src/future/login/view/widget/login_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class AppBarLogin extends StatelessWidget {
-  const AppBarLogin({super.key});
+class CompletePhone extends StatelessWidget {
+  const CompletePhone({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class AppBarLogin extends StatelessWidget {
       appBar: AppBar(
         leading: InkWell(
           onTap: () {
-            Get.offAll(const OpeningPage());
+            Get.offAll(const AppBarLogin());
           },
           child: const Stack(
             alignment: Alignment.center,
@@ -27,7 +27,7 @@ class AppBarLogin extends StatelessWidget {
           ),
         ),
       ),
-      body: const LoginPage(),
+      body: const CompletePhoneWidget(),
     );
   }
 }
