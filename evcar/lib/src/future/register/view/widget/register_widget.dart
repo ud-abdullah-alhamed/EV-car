@@ -61,9 +61,7 @@ class RegisterWidgets extends StatelessWidget {
                   ),
                   CustemButton(
                     text: 'إنشاء حساب',
-                    onPressed: () {
-                      Get.to(const AppBarLogin());
-                    },
+                    onPressed: () {},
                     colorText: Colors.white,
                     colorButton: const Color.fromRGBO(0, 168, 168, 1),
                   ),

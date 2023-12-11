@@ -1,6 +1,6 @@
 import 'package:evcar/src/core/widgets/custem_button.dart';
 import 'package:evcar/src/core/widgets/custem_title_text.dart';
-import 'package:evcar/src/future/login/view/widget/login_appbar.dart';
+import 'package:evcar/src/future/login/view/pages/login_page.dart';
 import 'package:evcar/src/future/register/view/pages/register_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -31,7 +31,7 @@ class OpeningWidget extends StatelessWidget {
                 colorButton: const Color.fromRGBO(0, 168, 168, 1),
                 text: 'تسجيل دخول',
                 onPressed: () {
-                  Get.to(const AppBarLogin());
+                  Get.to(const LoginPage());
                 },
               ),
               SizedBox(
